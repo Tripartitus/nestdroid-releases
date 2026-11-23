@@ -28,4 +28,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release upload v1.6.89 nestdroid-1.6.89.apk --clobber
+          gh release upload v1.6.89 nestdroid-1.6.89.apk --clobber --repo Tripartitus/nestdroid-releases
