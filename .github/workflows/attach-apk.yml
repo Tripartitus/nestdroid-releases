@@ -1,0 +1,31 @@
+name: attach-apk
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: Public URL of the signed APK to attach
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download and verify the APK
+        env:
+          APK_URL: ${{ inputs.apk_url }}
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 -o nestdroid-1.6.89.apk "$APK_URL"
+          echo "2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63  nestdroid-1.6.89.apk" | sha256sum -c -
+          ls -l nestdroid-1.6.89.apk
+
+      - name: Attach the asset to v1.6.89
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload v1.6.89 nestdroid-1.6.89.apk --clobber
