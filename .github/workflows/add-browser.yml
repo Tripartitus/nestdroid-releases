@@ -1,0 +1,26 @@
+name: add-browser
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: Screenshot zip URL
+        required: true
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and unpack
+        run: |
+          curl -fsSL "${{ github.event.inputs.zip_url }}" -o browser-fix.zip
+          unzip -o browser-fix.zip -d docs/screenshots
+          rm browser-fix.zip
+      - name: Commit
+        run: |
+          git config user.name "NestDroid Releases"
+          git config user.email "noreply@users.noreply.github.com"
+          git add docs/screenshots/05-browser.png
+          git commit -m "Refresh the browser screenshot" || echo "nothing to commit"
+          git push
