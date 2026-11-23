@@ -3,8 +3,28 @@
 Signed release builds of **NestDroid**, an Android sandbox + encrypted tunnel with a Lumen OS
 desktop shell, an app container, an encrypted vault, a firewall and a strict no-log policy.
 
-**This repository contains binaries only.** No source code, build scripts, mapping files or assets are
-published here. Every file below is a finished, signed APK.
+**This repository contains only release binaries and screenshots.** No source code, build scripts
+or mapping files are published here. Every download below is a finished, signed APK.
+
+![NestDroid desktop, dark theme](docs/screenshots/02-desktop-dark.png)
+
+## Screenshots
+
+The Lumen OS shell: a Windows 11-style desktop, Start menu, floating windows, built-in apps and
+light/dark themes. Everything runs on the device.
+
+| | |
+| --- | --- |
+| ![Lock screen](docs/screenshots/01-lock-screen.png) | ![Start menu](docs/screenshots/03-start-menu.png) |
+| **Lock screen** — local admin account, clock and quick unlock. | **Start menu** — pinned apps, recents and quick settings. |
+| ![Notes](docs/screenshots/06-notes.png) | ![Calculator](docs/screenshots/07-calculator.png) |
+| **Notes** — sealed note editor; everything is encrypted before it touches disk. | **Calculator** — themed keypad, history and tap-to-copy results. |
+| ![Browser](docs/screenshots/05-browser.png) | ![Security](docs/screenshots/09-security.png) |
+| **Browser** — offline start page, content blocker and tunnel status. | **Security** — firewall, TLS guard, traffic ledger and surveillance. |
+| ![Settings, dark](docs/screenshots/04-settings-dark.png) | ![Settings, light](docs/screenshots/11-settings-light.png) |
+| **Settings, dark** — appearance, wallpaper, desktop and taskbar. | **Settings, light** — the same theme controls in light mode. |
+| ![Clock](docs/screenshots/08-clock.png) | ![Desktop, light](docs/screenshots/10-desktop-light.png) |
+| **Clock** — time, stopwatch and countdown timer. | **Desktop, light** — the bloom wallpaper follows the accent. |
 
 ## Download
 
@@ -41,7 +61,7 @@ sha256sum nestdroid-1.6.89.apk
 
 ## Notes
 
-- The container is built on Bcore (Apache-2.0); its licence notice is bundled in the app.
+- The container is built on BCore (Apache-2.0); its license notice is bundled in the app.
 - NestDroid is local-only: no analytics, no accounts on a server, no telemetry.
 - These APKs are signed with a development certificate; verify the checksum above, and only install
   builds published on this page.
