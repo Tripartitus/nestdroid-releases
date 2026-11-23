@@ -1,0 +1,27 @@
+name: add-apk
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: APK URL
+        required: true
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and verify APK
+        run: |
+          curl -fsSL "${{ github.event.inputs.apk_url }}" -o nestdroid-1.6.89.apk
+          sha256sum nestdroid-1.6.89.apk
+          test "$(stat -c%s nestdroid-1.6.89.apk)" = "9783204"
+          test "$(sha256sum nestdroid-1.6.89.apk | cut -d' ' -f1)" = "2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63"
+      - name: Commit
+        run: |
+          git config user.name "NestDroid Releases"
+          git config user.email "noreply@users.noreply.github.com"
+          git add nestdroid-1.6.89.apk
+          git commit -m "Publish NestDroid 1.6.89 APK"
+          git push
