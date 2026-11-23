@@ -1,0 +1,27 @@
+name: add-screens2
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: Screenshot zip URL
+        required: true
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and unpack
+        run: |
+          curl -fsSL "${{ github.event.inputs.zip_url }}" -o screens2.zip
+          unzip -o screens2.zip -d docs/screenshots
+          rm screens2.zip
+          ls -l docs/screenshots
+      - name: Commit
+        run: |
+          git config user.name "NestDroid Releases"
+          git config user.email "noreply@users.noreply.github.com"
+          git add docs/screenshots
+          git commit -m "Add feature screenshots" || echo "nothing to commit"
+          git push
