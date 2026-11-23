@@ -28,8 +28,11 @@ light/dark themes. Everything runs on the device.
 
 ## Download
 
-Open the [Releases](https://github.com/Tripartitus/nestdroid-releases/releases) page and install the
-latest `nestdroid-<version>.apk`.
+Latest release: **NestDroid 1.6.89**. Get it either way — both files are the same signed build:
+
+- **In this repository:** [`nestdroid-1.6.89.apk`](nestdroid-1.6.89.apk)
+- **From Releases:** [`nestdroid-1.6.89.apk`](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.6.89/nestdroid-1.6.89.apk)
+- **Release page:** [NestDroid 1.6.89](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.6.89)
 
 | Version | APK | SHA-256 | Size |
 | --- | --- | --- | --- |
