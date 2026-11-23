@@ -3,32 +3,75 @@
 Signed release builds of **NestDroid**, an Android sandbox + encrypted tunnel with a Lumen OS
 desktop shell, an app container, an encrypted vault, a firewall and a strict no-log policy.
 
+**Latest: NestDroid 1.6.89** — [download the APK](nestdroid-1.6.89.apk) ·
+[release notes](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.6.89) ·
+SHA-256 `2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63`
+
 **This repository contains only release binaries and screenshots.** No source code, build scripts
-or mapping files are published here. Every download below is a finished, signed APK.
+or mapping files are published here. Every download is a finished, signed APK.
 
 ![NestDroid desktop, dark theme](docs/screenshots/02-desktop-dark.png)
 
+## What's inside
+
+- **Lumen OS desktop** — Windows 11-style Start menu, centered taskbar, floating windows, wallpapers and light/dark themes.
+- **Built-in apps** — Files, Notes, Media, Terminal, Browser, Vault, Calculator, Clock and Minesweeper.
+- **Sandbox and container** — isolated guest engine, virtual APK space, sealed file imports.
+- **Wine and handheld** — Windows-program runtime and Game Boy / DS emulation.
+- **Security** — encrypted vault, firewall, traffic monitor, TLS guard and a strict no-log policy.
+- **WireGuard tunnel** — WARP or imported configs, with host-mediated egress.
+
 ## Screenshots
 
-The Lumen OS shell: a Windows 11-style desktop, Start menu, floating windows, built-in apps and
-light/dark themes. Everything runs on the device.
+All screenshots are from the 1.6.89 release build.
+
+### Desktop and shell
 
 | | |
 | --- | --- |
 | ![Lock screen](docs/screenshots/01-lock-screen.png) | ![Start menu](docs/screenshots/03-start-menu.png) |
-| **Lock screen** — local admin account, clock and quick unlock. | **Start menu** — pinned apps, recents and quick settings. |
-| ![Notes](docs/screenshots/06-notes.png) | ![Calculator](docs/screenshots/07-calculator.png) |
-| **Notes** — sealed note editor; everything is encrypted before it touches disk. | **Calculator** — themed keypad, history and tap-to-copy results. |
-| ![Browser](docs/screenshots/05-browser.png) | ![Security](docs/screenshots/09-security.png) |
-| **Browser** — offline start page, content blocker and tunnel status. | **Security** — firewall, TLS guard, traffic ledger and surveillance. |
-| ![Settings, dark](docs/screenshots/04-settings-dark.png) | ![Settings, light](docs/screenshots/11-settings-light.png) |
-| **Settings, dark** — appearance, wallpaper, desktop and taskbar. | **Settings, light** — the same theme controls in light mode. |
-| ![Clock](docs/screenshots/08-clock.png) | ![Desktop, light](docs/screenshots/10-desktop-light.png) |
-| **Clock** — time, stopwatch and countdown timer. | **Desktop, light** — the bloom wallpaper follows the accent. |
+| **Lock screen** — local admin account, clock and one-tap unlock. | **Start menu** — pinned apps, recents and quick settings. |
+
+### Built-in apps
+
+| | |
+| --- | --- |
+| ![Browser](docs/screenshots/05-browser.png) | ![Notes](docs/screenshots/06-notes.png) |
+| **Browser** — secure address pill, content blocker and offline start page. | **Notes** — sealed editor; notes are encrypted before they touch disk. |
+| ![Calculator](docs/screenshots/07-calculator.png) | ![Clock](docs/screenshots/08-clock.png) |
+| **Calculator** — themed keypad, history and tap-to-copy results. | **Clock** — clock, stopwatch and countdown timer. |
+
+### Security and storage
+
+| | |
+| --- | --- |
+| ![Security](docs/screenshots/09-security.png) | ![Vault](docs/screenshots/12-vault.png) |
+| **Security** — firewall, TLS guard, traffic ledger and surveillance tools. | **Vault** — AES-256-GCM objects sealed by the device keystore. |
+| ![Files](docs/screenshots/13-files.png) | ![Container](docs/screenshots/15-container.png) |
+| **Files** — sealed downloads and vault objects in one browser. | **Container** — virtual package space and encrypted file imports. |
+
+### Sandbox, Wine and handheld
+
+| | |
+| --- | --- |
+| ![Terminal](docs/screenshots/14-terminal.png) | ![Sandbox](docs/screenshots/16-sandbox.png) |
+| **Terminal** — Linux-style console inside the isolated guest. | **Sandbox** — engine status, virtual device and reset controls. |
+| ![Wine](docs/screenshots/17-wine.png) | ![Handheld](docs/screenshots/18-handheld.png) |
+| **Wine** — Windows runtime channel, graphics and controller diagnostics. | **Handheld** — Game Boy / DS emulator with on-screen controls. |
+
+### Network, settings and themes
+
+| | |
+| --- | --- |
+| ![Tunnel](docs/screenshots/19-tunnel.png) | ![Settings](docs/screenshots/04-settings-dark.png) |
+| **Tunnel** — WireGuard / WARP status and custom gateway. | **Settings** — appearance, wallpaper, desktop and taskbar. |
+| ![Desktop, light theme](docs/screenshots/10-desktop-light.png) | ![Settings, light theme](docs/screenshots/11-settings-light.png) |
+| **Desktop, light theme** — the bloom wallpaper follows the accent. | **Settings, light theme** — the same controls in light mode. |
 
 ## Download
 
-Latest release: **NestDroid 1.6.89**. Get it either way — both files are the same signed build:
+**NestDroid 1.6.89** is available in this repository and on the Releases page — both are the same
+signed build:
 
 - **In this repository:** [`nestdroid-1.6.89.apk`](nestdroid-1.6.89.apk)
 - **From Releases:** [`nestdroid-1.6.89.apk`](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.6.89/nestdroid-1.6.89.apk)
@@ -38,7 +81,7 @@ Latest release: **NestDroid 1.6.89**. Get it either way — both files are the s
 | --- | --- | --- | --- |
 | 1.6.89 | `nestdroid-1.6.89.apk` | `2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63` | 9,783,204 bytes |
 
-Verify a download before installing:
+Verify the download before installing:
 
 ```sh
 sha256sum nestdroid-1.6.89.apk
