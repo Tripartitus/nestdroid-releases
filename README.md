@@ -27,7 +27,9 @@ or mapping files are published here. Every download is a finished, signed APK.
 
 ## Screenshots
 
-All screenshots are from the 1.9.1 release build.
+All screenshots are from the current 1.9.3 build, whose skylight widget is now the same
+accent-tinted glass as the launch deck and the dock: the wallpaper reads through it, and it
+carries the live accent bead, rim and telemetry pills.
 
 ### Desktop and shell
 
@@ -66,7 +68,7 @@ together:
 
 ### Built-in apps
 
-Windows use the 1.9.1 caption bar: app mark, name and runtime, then full screen, minimize,
+Windows use the 1.9.3 caption bar: app mark, name and runtime, then full screen, minimize,
 maximize and close, with the workspace pill on the status strip.
 
 | | |
