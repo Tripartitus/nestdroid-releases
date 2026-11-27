@@ -3,9 +3,13 @@
 Signed release builds of **NestDroid**, an Android sandbox + encrypted tunnel with a Lumen OS
 desktop shell, an app container, an encrypted vault, a firewall and a strict no-log policy.
 
-**Latest: NestDroid 1.9.1** — [download the APK](nestdroid-1.9.1.apk) ·
-[release notes](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.9.1) ·
-SHA-256 `5b38a0a824d5bba72da9bdceb178d9a76e6e12ddfe3d1d1ea388e44ddfa5e4bb`
+**Latest published release: NestDroid 1.6.89** —
+[download the APK](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.6.89/nestdroid-1.6.89.apk) ·
+[release notes](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.6.89) ·
+SHA-256 `2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63` · 9,783,204 bytes
+
+The screenshots below are captured from the newer 1.12.8 build, which has not been published here
+yet; the download links above are the current public build.
 
 **This repository contains only release binaries and screenshots.** No source code, build scripts
 or mapping files are published here. Every download is a finished, signed APK.
@@ -27,9 +31,9 @@ or mapping files are published here. Every download is a finished, signed APK.
 
 ## Screenshots
 
-All screenshots are from the current 1.9.3 build, whose skylight widget is now the same
-accent-tinted glass as the launch deck and the dock: the wallpaper reads through it, and it
-carries the live accent bead, rim and telemetry pills.
+All screenshots were re-captured on the 1.12.8 build (API 28, 1080 × 1920, dark and light
+palettes): the lock screen, both desktops, Start and its ranked fuzzy search, the radial quick
+ring and quick settings, the rainbow accent, and every built-in app.
 
 ### Desktop and shell
 
@@ -68,7 +72,7 @@ together:
 
 ### Built-in apps
 
-Windows use the 1.9.3 caption bar: app mark, name and runtime, then full screen, minimize,
+Windows use the glass caption bar: app mark, name and runtime, then full screen, minimize,
 maximize and close, with the workspace pill on the status strip.
 
 | | |
@@ -104,22 +108,24 @@ maximize and close, with the workspace pill on the status strip.
 
 ## Download
 
-**NestDroid 1.9.1** is available in this repository and on the Releases page — both are the same
-signed build:
+**NestDroid 1.6.89** is the current published build: it is both the asset attached to the release
+and the copy committed in this repository, and the two are the same signed APK.
 
-- **In this repository:** [`nestdroid-1.9.1.apk`](nestdroid-1.9.1.apk)
-- **From Releases:** [`nestdroid-1.9.1.apk`](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.9.1/nestdroid-1.9.1.apk)
-- **Release page:** [NestDroid 1.9.1](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.9.1)
+- **In this repository:** [`nestdroid-1.6.89.apk`](nestdroid-1.6.89.apk)
+- **From Releases:** [`nestdroid-1.6.89.apk`](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.6.89/nestdroid-1.6.89.apk)
+- **Release page:** [NestDroid 1.6.89](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.6.89)
 
 | Version | APK | SHA-256 | Size |
 | --- | --- | --- | --- |
-| 1.9.1 | `nestdroid-1.9.1.apk` | `5b38a0a824d5bba72da9bdceb178d9a76e6e12ddfe3d1d1ea388e44ddfa5e4bb` | 9,807,512 bytes |
 | 1.6.89 | `nestdroid-1.6.89.apk` | `2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63` | 9,783,204 bytes |
+
+Newer builds (1.9.x and 1.12.x) exist in the project but have not been published as releases yet, so
+this page does not link them.
 
 Verify the download before installing:
 
 ```sh
-sha256sum nestdroid-1.9.1.apk
+sha256sum nestdroid-1.6.89.apk
 ```
 
 ## Install
