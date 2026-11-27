@@ -3,13 +3,9 @@
 Signed release builds of **NestDroid**, an Android sandbox + encrypted tunnel with a Lumen OS
 desktop shell, an app container, an encrypted vault, a firewall and a strict no-log policy.
 
-**Latest published release: NestDroid 1.6.89** —
-[download the APK](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.6.89/nestdroid-1.6.89.apk) ·
-[release notes](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.6.89) ·
-SHA-256 `2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63` · 9,783,204 bytes
-
-The screenshots below are captured from the newer 1.12.8 build, which has not been published here
-yet; the download links above are the current public build.
+**Latest: NestDroid 1.12.8** — [download the APK](nestdroid-1.12.8.apk) ·
+[release notes](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.12.8) ·
+SHA-256 `f50ec25e20c2262c8cb552969c09746f9fd3d148501a4f727cd9c4ecee38c23a` · 9,849,608 bytes
 
 **This repository contains only release binaries and screenshots.** No source code, build scripts
 or mapping files are published here. Every download is a finished, signed APK.
@@ -108,24 +104,22 @@ maximize and close, with the workspace pill on the status strip.
 
 ## Download
 
-**NestDroid 1.6.89** is the current published build: it is both the asset attached to the release
+**NestDroid 1.12.8** is the current published build: it is both the asset attached to the release
 and the copy committed in this repository, and the two are the same signed APK.
 
-- **In this repository:** [`nestdroid-1.6.89.apk`](nestdroid-1.6.89.apk)
-- **From Releases:** [`nestdroid-1.6.89.apk`](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.6.89/nestdroid-1.6.89.apk)
-- **Release page:** [NestDroid 1.6.89](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.6.89)
+- **In this repository:** [`nestdroid-1.12.8.apk`](nestdroid-1.12.8.apk)
+- **From Releases:** [`nestdroid-1.12.8.apk`](https://github.com/Tripartitus/nestdroid-releases/releases/download/v1.12.8/nestdroid-1.12.8.apk)
+- **Release page:** [NestDroid 1.12.8](https://github.com/Tripartitus/nestdroid-releases/releases/tag/v1.12.8)
 
 | Version | APK | SHA-256 | Size |
 | --- | --- | --- | --- |
+| 1.12.8 | `nestdroid-1.12.8.apk` | `f50ec25e20c2262c8cb552969c09746f9fd3d148501a4f727cd9c4ecee38c23a` | 9,849,608 bytes |
 | 1.6.89 | `nestdroid-1.6.89.apk` | `2f176e648c053a847d135fb45f6aede58d929791c68103eb04c1159f0d8d5c63` | 9,783,204 bytes |
-
-Newer builds (1.9.x and 1.12.x) exist in the project but have not been published as releases yet, so
-this page does not link them.
 
 Verify the download before installing:
 
 ```sh
-sha256sum nestdroid-1.6.89.apk
+sha256sum nestdroid-1.12.8.apk
 ```
 
 ## Install
